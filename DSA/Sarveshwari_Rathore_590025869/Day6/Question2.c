@@ -11,27 +11,27 @@ void unionarray(int arr1[], int n, int arr2[], int m) {
             continue;
         }
         if (arr1[i] < arr2[j]) {
-            printf("%d ", arr1[i]);
+            printf("%d ",arr1[i]);
             i++;
         }
         else if (arr1[i] > arr2[j]) {
-            printf("%d ", arr2[j]);
+            printf("%d ",arr2[j]);
             j++;
         }
         else {
-            printf("%d ", arr1[i]);
+            printf("%d ",arr1[i]);
             i++;
             j++;
         }
     }
     while (i < n) {
         if (i == 0 || arr1[i] != arr1[i-1])
-            printf("%d ", arr1[i]);
+            printf("%d ",arr1[i]);
         i++;
     }
     while (j < m) {
         if (j == 0 || arr2[j] != arr2[j - 1])
-            printf("%d ", arr2[j]);
+            printf("%d ",arr2[j]);
         j++;
     } printf("\n");
 }
